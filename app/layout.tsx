@@ -24,10 +24,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="min-h-screen bg-zinc-50 dark:bg-black text-foreground flex">
+          <aside className="hidden md:flex md:w-64 border-r bg-white/80 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-black/30">
+            <nav className="w-full p-6 space-y-1">
+              <div className="mb-6">
+                <a href="/dashboard" className="text-xl font-semibold">Schedulins</a>
+              </div>
+              <a href="/dashboard" className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors">Dashboard</a>
+              <a href="/plan" className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors">Plan</a>
+              <a href="/execute" className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors">Execute</a>
+              <a href="/reward" className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors">Reward</a>
+              <a href="/settings" className="block rounded-md px-3 py-2 text-sm hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors">Settings</a>
+            </nav>
+          </aside>
+          <div className="flex-1 min-w-0">
+            <header className="sticky top-0 z-10 border-b bg-white/80 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-black/30 md:hidden">
+              <div className="flex items-center justify-between px-4 py-3">
+                <a href="/dashboard" className="font-semibold">Schedulins</a>
+                <span className="text-sm opacity-70">Aesthetic Planner</span>
+              </div>
+            </header>
+            <main className="p-4 md:p-8">
+              {children}
+            </main>
+          </div>
+        </div>
       </body>
     </html>
   );
