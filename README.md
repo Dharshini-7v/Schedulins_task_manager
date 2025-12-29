@@ -126,5 +126,3 @@ This project is licensed under the MIT License.
 - Implemented the technical architecture and deployment
 
 ---
-
-**Made with ❤️ to make productivity fun and rewarding!**
