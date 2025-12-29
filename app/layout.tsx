@@ -39,8 +39,8 @@ export default function RootLayout({
             <header className="sticky top-0 z-10 border-b bg-white/80 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-black/30 md:hidden">
               <div className="flex items-center justify-between px-4 py-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center shadow-sm">
-                    <span className="text-white font-bold text-sm">S</span>
+                  <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 flex items-center justify-center shadow-md transform rotate-12">
+                    <span className="text-white font-black text-sm italic transform -rotate-12" style={{fontFamily: 'Georgia, serif'}}>S</span>
                   </div>
                   <a href="/dashboard" className="font-semibold">Schedulins</a>
                 </div>

@@ -18,8 +18,8 @@ export default function Sidebar() {
     <aside className="hidden md:flex md:w-64 border-r bg-white/80 dark:bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-black/30">
       <nav className="w-full p-6 space-y-1">
         <div className="mb-6 flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center shadow-md">
-            <span className="text-white font-bold text-lg">S</span>
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 flex items-center justify-center shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
+            <span className="text-white font-black text-xl italic transform -rotate-12 hover:rotate-0 transition-transform duration-300" style={{fontFamily: 'Georgia, serif'}}>S</span>
           </div>
           <Link href="/dashboard" className="text-xl font-semibold">Schedulins</Link>
         </div>
