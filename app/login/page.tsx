@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -140,5 +140,13 @@ export default function LoginPage() {
         </div>
       </motion.div>
     </section>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <LoginForm />
+    </Suspense>
   );
 }
