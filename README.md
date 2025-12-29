@@ -111,18 +111,3 @@ The app is deployed on Vercel with automatic deployments from the main branch.
 ## 🤝 Contributing
 
 This is a solo project, but feedback and suggestions are welcome!
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 👨‍💻 Author
-
-**Dharshini** - Full-stack developer and designer
-
-- Designed and developed the complete application
-- Created the gamification system and reward mechanics  
-- Built all UI/UX components and animations
-- Implemented the technical architecture and deployment
-
----
