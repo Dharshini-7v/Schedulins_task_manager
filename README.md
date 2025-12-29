@@ -106,7 +106,6 @@ schedulins/
 
 The app is deployed on Vercel with automatic deployments from the main branch.
 
-**Live Demo**: [Your Vercel URL]
 
 ## 🤝 Contributing
 
