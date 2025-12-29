@@ -1,5 +1,6 @@
 import TaskForm from "@/components/plan/TaskForm";
 import TaskList from "@/components/plan/TaskList";
+import GiftPrompt from "@/components/gift/GiftPrompt";
 
 export default function PlanPage() {
   return (
@@ -7,6 +8,10 @@ export default function PlanPage() {
       <div>
         <h1 className="text-2xl font-semibold">Plan</h1>
         <p className="text-sm opacity-70">Create tasks, set time limits and deadlines, and arrange order.</p>
+      </div>
+      <div className="rounded-lg border p-4 bg-white/70 dark:bg-black/40">
+        <h2 className="text-lg font-medium mb-3">Gift Prompt</h2>
+        <GiftPrompt />
       </div>
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-lg border p-4 bg-white/70 dark:bg-black/40">
