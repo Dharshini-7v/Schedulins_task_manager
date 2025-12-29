@@ -153,7 +153,6 @@ export default function RewardReveal({ category }: { category: GiftCategory }) {
 
   return (
     <div className="flex flex-col items-center gap-6 py-10">
-      <div className="text-sm opacity-70">Reward category: {CATEGORY_LABEL[category]}</div>
       <AnimatePresence mode="wait">
         {!opened ? (
           <motion.button
@@ -188,7 +187,6 @@ export default function RewardReveal({ category }: { category: GiftCategory }) {
             ) : (
               <div className="text-7xl mb-3">{reward.emoji ?? "🎁"}</div>
             )}
-            <div className="text-xl font-semibold">{reward.title}</div>
           </motion.div>
         )}
       </AnimatePresence>
